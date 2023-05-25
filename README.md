@@ -1,3 +1,3 @@
-# custom_LibC
+# libc
 
-rewriting functions from C libraries such as string.h and stdlib.h
+rewritting C standard library into my own library which will be used in any other (following) C project 

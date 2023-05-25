@@ -10,48 +10,48 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=		libft.a
-HEADER	=		$(INC)/libft.h
-INC		=		./include
+NAME	:=	libft.a
+INC		:=	./include
+HEADER	:=	$(INC)/libft.h
 
-CC		=		gcc
-CFLAGS	=		-Wall -Wextra -Werror
-RM		=		rm -rf
+CC		:=	gcc
+CFLAGS	:=	-Wall -Wextra -Werror
+RM		:=	rm -rf
 
-SRC		=		ft_atoi.c \
-				ft_bzero.c \
-				ft_calloc.c \
-				ft_isalnum.c \
-				ft_isalpha.c \
-				ft_isascii.c \
-				ft_isdigit.c \
-				ft_isprint.c \
-				ft_itoa.c \
-				ft_memchr.c \
-				ft_memcmp.c \
-				ft_memcpy.c \
-				ft_memmove.c \
-				ft_memset.c \
-				ft_putchar_fd.c \
-				ft_putendl_fd.c \
-				ft_putnbr_fd.c \
-				ft_putstr_fd.c \
-				ft_split.c \
-				ft_strchr.c \
-				ft_strdup.c \
-				ft_striteri.c \
-				ft_strjoin.c \
-				ft_strlcat.c \
-				ft_strlcpy.c \
-				ft_strlen.c \
-				ft_strmapi.c \
-				ft_strncmp.c \
-				ft_strnstr.c \
-				ft_strrchr.c \
-				ft_strtrim.c \
-				ft_substr.c \
-				ft_tolower.c \
-				ft_toupper.c
+SRC		:=	ft_atoi.c \
+			ft_bzero.c \
+			ft_calloc.c \
+			ft_isalnum.c \
+			ft_isalpha.c \
+			ft_isascii.c \
+			ft_isdigit.c \
+			ft_isprint.c \
+			ft_itoa.c \
+			ft_memchr.c \
+			ft_memcmp.c \
+			ft_memcpy.c \
+			ft_memmove.c \
+			ft_memset.c \
+			ft_putchar_fd.c \
+			ft_putendl_fd.c \
+			ft_putnbr_fd.c \
+			ft_putstr_fd.c \
+			ft_split.c \
+			ft_strchr.c \
+			ft_strdup.c \
+			ft_striteri.c \
+			ft_strjoin.c \
+			ft_strlcat.c \
+			ft_strlcpy.c \
+			ft_strlen.c \
+			ft_strmapi.c \
+			ft_strncmp.c \
+			ft_strnstr.c \
+			ft_strrchr.c \
+			ft_strtrim.c \
+			ft_substr.c \
+			ft_tolower.c \
+			ft_toupper.c
 
 SRC_BONUS	=	ft_lstadd_back.c \
 				ft_lstadd_front.c \
@@ -63,12 +63,12 @@ SRC_BONUS	=	ft_lstadd_back.c \
 				ft_lstnew.c \
 				ft_lstsize.c
 
-REV = \033[0m
-PR = \033[1;35m
-GR = \033[1;32m
+REV := \033[0m
+PR	:= \033[1;35m
+GR	:= \033[1;32m
 
-SRC_DIR		=	src/
-OBJ_DIR		=	build/
+SRC_DIR	:=	src/
+OBJ_DIR	:=	build/
 
 OBJ = $(addprefix $(OBJ_DIR),$(notdir $(SRC:.c=.o)))
 OBJ_BONUS = $(addprefix $(OBJ_DIR),$(notdir $(SRC_BONUS:.c=.o)))
